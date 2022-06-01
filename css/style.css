@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin:0; padding: 0;
+    box-shadow: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;   
+}
+
+body{
+    background: black;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 3rem 9%;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.destin{
+    color:#29d9d5;
+    font-size: 5rem;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.btn{
+    margin-top:1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color:#29d9d5;
+    border:solid #29d9d5;
+    border-radius:5rem;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: #29d9d5;
+    color: rgba(17,17,17,.7) ;
+}
+
+.btn{
+    margin-top: 0;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: #aaa;
+    display: inline-block;
+    margin: 0 1rem;
+}
+ 
+/*Mudar a cor ao passar o mouse no cabeçalho*/
+.navbar:hover{
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.navbar a:hover{
+    color: #fff;
+}
+.logo{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.inicio{
+    margin: 0 auto;
+    margin-top: 9rem;
+    width: 80%;
+    border-radius: 1rem;
+    background:url(../img/flight-landing-INBNDCHECK1117.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    
+}
+
+.cont{
+    text-align: center;
+}
+
+span{
+    font-weight: bolder;
+    color: white;
+    -webkit-text-stroke: .1rem white;
+    font-size:4vw;
+    display: block;
+    filter: drop-shadow(0 0 3px #000);
+}
+
+h3{
+    font-size: 6vw;
+    color: white;
+    -webkit-text-stroke: .1rem white;;
+    
+    filter: drop-shadow(0 0 3px #000);
+}
+
+p{
+    max-width:60rem;
+    margin: 1rem auto;
+    font-size:1.4rem ;
+    color: white;
+    line-height: 2;
+}
+
+/*Parte do formulário*/
+
+.formu{
+    width: 60%;
+    margin: 1rem auto;
+    margin-top: -5rem;
+    background: #222;
+    border-radius: 1rem;
+    box-shadow: 1 .7rem 2rem rgba(17,17,17,.3);
+}
+
+.inputbox{
+    flex: 1 1 25rem;
+}
+
+.form{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+
+._btn{
+    flex: 1 1 15rem;
+}
+
+._btn{
+    margin-top:1rem;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    color:#29d9d5;
+    border:solid #29d9d5;
+    border-radius:5rem;
+    cursor: pointer;
+    background: none;
+    text-align: center;
+}
+
+._btn:hover{
+    background: #29d9d5;
+    color: rgba(17,17,17,.7) ;
+}
+
+._btn{
+    margin-top: 2;
+}
+
+
+
+.inpu{
+    height: 2.5rem;
+    font-size: 1.4rem;
+    color: white ;
+
+}
+
+input{
+    width: 100%;
+    padding: 1.3rem 1.7rem;
+    border-radius: 5rem;
+    border: white;
+    font-size: 1.6rem;
+    color: black
+   
+}
+
+
+/*video*/
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 5rem;
+}
+
+.video-container{
+    flex: 1 1 42rem;
+       
+}
+
+video{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+/* Videos informações ao lado*/
+.content{
+    flex: 1 1 42rem;
+    margin-bottom: 5rem;
+}
+
+.alterar{
+    color:white;
+    font-size: 2rem;
+    color: white;
+}
+
+.alt{
+    color: #fff;
+    font-size:4rem;
+    margin-top: .5rem;
+}
+
+.alte{
+    padding: 1rem 0;
+    font-size:1.4rem ;
+    color: white;
+    line-height: 2; 
+}
+
+
+
+
+/* aba de destino*/
+
+.destino .box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.6em;
+}
+
+
+
+.box{
+    width: 400px;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #222;
+    
+}
+
+image{
+    height: 20rem;
+    overflow: hidden;
+    width: 100px;
+}
+
+img:hover{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box:hover img{
+    transform: scale(1.5);
+}
+
+
+
+
+/*Responsividade*/
+@media  (max-widht:991px){
+    .html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+@media(max-widht:768px){
+    .html{
+        font-size: 50%;
+    }
+}
+@media  (max-widht:450px){
+
+    .html{
+        font-size: 50%;
+    }
+
+    .about .content .alt .alte{
+        font-size: 3.5rem;
+    }
+
+}
+.passagens .box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.6em;
+}
+
+
+
+.box{
+    width: 400px;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #222;
+    
+}
+
+image{
+    height: 20rem;
+    overflow: hidden;
+    width: 100px;
+}
+
+img:hover{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box:hover img{
+    transform: scale(1.5);
+}
+
+
+
+
+/*Responsividade*/
+@media  (max-widht:991px){
+    .html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+@media(max-widht:768px){
+    .html{
+        font-size: 50%;
+        
+    }
+}
+@media  (max-widht:450px){
+
+    .html{
+        font-size: 50%;
+    }
+
+    .about .content .alt .alte{
+        font-size: 3.5rem;
+    }
+
+}
